@@ -8,7 +8,6 @@
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions
 # are met:
-#
 #  * Redistributions of source code must retain the above copyright
 #    notice, this list of conditions and the following disclaimer.
 #  * Redistributions in binary form must reproduce the above
@@ -214,8 +213,8 @@ class MoveGroupPythonInterfaceTutorial(object):
     ## We can plan a motion for this group to a desired pose for the
     ## end-effector:
     pose_goal = geometry_msgs.msg.Pose()
-    pose_goal.orientation.w = 1.0
-    pose_goal.position.x = 0.4
+    pose_goal.orientation.w = 2.0
+    pose_goal.position.x = 0.6
     pose_goal.position.y = 0.1
     pose_goal.position.z = 0.4
 
@@ -474,6 +473,7 @@ def main():
     print("Press Ctrl-D to exit at any time")
     print("")
     input("============ Press `Enter` to begin the tutorial by setting up the moveit_commander ...")
+    print("============ eddited version ==========================================================" )
     tutorial = MoveGroupPythonInterfaceTutorial()
 
     input("============ Press `Enter` to execute a movement using a joint state goal ...")
